@@ -1,0 +1,71 @@
+body {
+
+    background: #a9ff77; /* Цвет фона */
+    color: #b83957; /* Цвет текста */
+    font-family: 'Poppins', cursive;
+    background: url("mars.jpg") 100% 10% no-repeat;
+    background-size: cover;
+}
+h1 {
+    position: absolute;
+    left: 30%;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 80px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.box .user-box  {
+  position: relative;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    color: #b83957;
+}
+
+.photo{
+    position: relative;
+    color: rgba(0,0,0,0);
+    background-color: white;
+}
+
+.box .user-box input {
+  width: 100%;
+  padding: 80px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.box .user-box input:focus ~ label,
+.box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
